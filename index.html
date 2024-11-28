@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Dashboard</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script
+      src="https://kit.fontawesome.com/745f32f4b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/dist/script.js"></script>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__title">
+        <h1>Social Media Dashboard</h1>
+        <span class="header__subtitle"> Total Followers: 23,004 </span>
+      </div>
+
+      <fieldset
+        class="header__toggle toggle"
+        aria-label="theme toggle"
+        role="radiogroup"
+      >
+        <label for="dark"
+          >Dark Mode <span class="visually-hidden">On</span></label
+        >
+        <div class="toggle__wrapper">
+          <input type="radio" name="theme" id="dark" />
+          <input type="radio" name="theme" id="light" />
+          <span aria-hidden="true" class="toggle__background"></span>
+          <span aria-hidden="true" class="toggle__button"></span>
+        </div>
+        <label for="light" class="visually-hidden">Dark Mode Off</label>
+      </fieldset>
+    </header>
+
+    <main>
+      <section class="container cards">
+        <div class="card card--facebook">
+          <div class="card__platform">
+            <i class="card__icon fa-brands fa-facebook"></i>
+            <div class="card__username">@Anonymous</div>
+          </div>
+          <div class="card__Followers">
+            <div class="card__count card__count--big">1987</div>
+            <div class="card__label">Followers</div>
+          </div>
+          <div class="card__change card__change--up">
+            <i class="fa-solid fa-arrow-up"></i>
+            <div class="card__number">12 Today</div>
+          </div>
+        </div>
+
+        <div class="card card--twitter">
+          <div class="card__platform">
+            <i class="card__icon fa-brands fa-twitter"></i>
+            <div class="card__username">@Anonymous</div>
+          </div>
+          <div class="card__Followers">
+            <div class="card__count card__count--big">1044</div>
+            <div class="card__label">Followers</div>
+          </div>
+          <div class="card__change card__change--up">
+            <i class="fa-solid fa-arrow-up"></i>
+            <div class="card__number">99 Today</div>
+          </div>
+        </div>
+
+        <div class="card card--instagram">
+          <div class="card__platform">
+            <i class="card__icon fa-brands fa-instagram"></i>
+            <div class="card__username">@Anonymous</div>
+          </div>
+          <div class="card__Followers">
+            <div class="card__count card__count--big">11K</div>
+            <div class="card__label">Followers</div>
+          </div>
+          <div class="card__change card__change--up">
+            <i class="fa-solid fa-arrow-up"></i>
+            <div class="card__number">1099 Today</div>
+          </div>
+        </div>
+
+        <div class="card card--youtube">
+          <div class="card__platform">
+            <i class="card__icon fa-brands fa-youtube"></i>
+            <div class="card__username">@Anonymous</div>
+          </div>
+          <div class="card__Followers">
+            <div class="card__count card__count--big">8239</div>
+            <div class="card__label">Followers</div>
+          </div>
+          <div class="card__change card__change--down">
+            <i class="fa-solid fa-arrow-down"></i>
+            <div class="card__number">124 Today</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2>Overview - Today</h2>
+        <div class="cards">
+          <div class="card card-grid">
+            <div class="card__subtitle">Page views</div>
+            <i class="card__icon fa-brands fa-facebook"></i>
+            <div class="card__count card__count--small">87</div>
+            <div class="card__change card__change--up">
+              <i class="fa-solid fa-arrow-up"></i>
+              <div class="card__number">3%</div>
+            </div>
+          </div>
+
+          <div class="card card-grid">
+            <div class="card__subtitle">Likes</div>
+            <i class="card__icon fa-brands fa-facebook"></i>
+            <div class="card__count card__count--small">52</div>
+            <div class="card__change card__change--down">
+              <i class="fa-solid fa-arrow-down"></i>
+              <div class="card__number">2%</div>
+            </div>
+          </div>
+
+          <div class="card card-grid">
+            <div class="card__subtitle">Likes</div>
+            <i class="card__icon fa-brands fa-instagram"></i>
+            <div class="card__count card__count--small">5246</div>
+            <div class="card__change card__change--up">
+              <i class="fa-solid fa-arrow-up"></i>
+              <div class="card__number">2257%</div>
+            </div>
+          </div>
+
+          <div class="card card-grid">
+            <div class="card__subtitle">Profie views</div>
+            <i class="card__icon fa-brands fa-instagram"></i>
+            <div class="card__count card__count--small">52k</div>
+            <div class="card__change card__change--up">
+              <i class="fa-solid fa-arrow-up"></i>
+              <div class="card__number">1375%</div>
+            </div>
+          </div>
+
+          <div class="card card-grid">
+            <div class="card__subtitle">Retweets</div>
+            <i class="card__icon fa-brands fa-twitter"></i>
+            <div class="card__count card__count--small">117</div>
+            <div class="card__change card__change--up">
+              <i class="fa-solid fa-arrow-up"></i>
+              <div class="card__number">303%</div>
+            </div>
+          </div>
+
+          <div class="card card-grid">
+            <div class="card__subtitle">Likes</div>
+            <i class="card__icon fa-brands fa-twitter"></i>
+            <div class="card__count card__count--small">507</div>
+            <div class="card__change card__change--up">
+              <i class="fa-solid fa-arrow-up"></i>
+              <div class="card__number">553%</div>
+            </div>
+          </div>
+
+          <div class="card card-grid">
+            <div class="card__subtitle">Likes</div>
+            <i class="card__icon fa-brands fa-youtube"></i>
+            <div class="card__count card__count--small">107</div>
+            <div class="card__change card__change--down">
+              <i class="fa-solid fa-arrow-down"></i>
+              <div class="card__number">19%</div>
+            </div>
+          </div>
+
+          <div class="card card-grid">
+            <div class="card__subtitle">Total views</div>
+            <i class="card__icon fa-brands fa-youtube"></i>
+            <div class="card__count card__count--small">87</div>
+            <div class="card__change card__change--down">
+              <i class="fa-solid fa-arrow-down"></i>
+              <div class="card__number">12%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="copy">&copy;Created By Loseyi</div>
+  </body>
+</html>
